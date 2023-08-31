@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Welcome</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="login-signin-container">
+      <div class="content-holder">
+          <h2>Hello to you!</h2>
+         
+          <button id="button-1" class="button-1" onclick="signup()">Sign up</button>
+          <button id="button-2" class="button-2" onclick="login()">Login</button>
+      </div>
+    </div>
+
+
+    <!--Forms-->
+    <div class="box-2">
+        <div id="login_form" class="login-form-container">
+            <h1>Login Here</h1>
+            <input id="username_login" type="text" placeholder="Username" class="input-field">
+            <br><br>
+            <input id="password_login" type="password" placeholder="Password" class="input-field">
+            <br><br>
+            <button onclick="login_action()" class="login-button" type="button">Login</button>
+        </div>
+
+
+    <!--Create Container for Signup form-->
+    <div id="signin_form" class="signup-form-container">
+        <h1>Sign Up Here</h1>
+        <input id="username_signin" type="text" placeholder="Username" class="input-field">
+        <br><br>
+        <input id="email_sigin" type="email" placeholder="Email" class="input-field">
+        <br><br>
+        <input id="password_sigin" type="password" placeholder="Password" class="input-field">
+        <br><br>
+        <input type="password" placeholder="Password" class="input-field">
+        <br><br>
+        <button onclick="signup_action()" id="password2_sigin" class="signup-button" type="button">Sign Up</button>
+    </div>
+
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
